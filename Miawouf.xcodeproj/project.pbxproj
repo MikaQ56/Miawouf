@@ -14,6 +14,7 @@
 		CAD0062E2136E62000AC5C16 /* MiawoufTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0062D2136E62000AC5C16 /* MiawoufTests.swift */; };
 		CAD006402136E86200AC5C16 /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0063F2136E86200AC5C16 /* Races.swift */; };
 		CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */; };
+		CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006432136F3A500AC5C16 /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		CAD0062F2136E62000AC5C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD0063F2136E86200AC5C16 /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Races.swift; path = "../../../../../../../../../Downloads/App Assets/Races.swift"; sourceTree = "<group>"; };
 		CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CAD006432136F3A500AC5C16 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */,
+				CAD006432136F3A500AC5C16 /* FormViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */,
 				CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */,
+				CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */,
 				CAD006402136E86200AC5C16 /* Races.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
