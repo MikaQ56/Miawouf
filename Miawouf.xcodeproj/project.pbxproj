@@ -15,6 +15,7 @@
 		CAD006402136E86200AC5C16 /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0063F2136E86200AC5C16 /* Races.swift */; };
 		CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */; };
 		CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006432136F3A500AC5C16 /* FormViewController.swift */; };
+		CAD006462136F5F700AC5C16 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006452136F5F700AC5C16 /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CAD0063F2136E86200AC5C16 /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Races.swift; path = "../../../../../../../../../Downloads/App Assets/Races.swift"; sourceTree = "<group>"; };
 		CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CAD006432136F3A500AC5C16 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CAD006452136F5F700AC5C16 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		CAD0063C2136E7C400AC5C16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CAD006452136F5F700AC5C16 /* SuccessViewController.swift */,
 				CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */,
 				CAD006432136F3A500AC5C16 /* FormViewController.swift */,
 			);
@@ -230,6 +233,7 @@
 				CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */,
 				CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */,
 				CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */,
+				CAD006462136F5F700AC5C16 /* SuccessViewController.swift in Sources */,
 				CAD006402136E86200AC5C16 /* Races.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
