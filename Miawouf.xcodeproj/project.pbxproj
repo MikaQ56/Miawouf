@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006182136E61E00AC5C16 /* AppDelegate.swift */; };
-		CAD0061B2136E61E00AC5C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0061A2136E61E00AC5C16 /* ViewController.swift */; };
 		CAD0061E2136E61E00AC5C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD0061C2136E61E00AC5C16 /* Main.storyboard */; };
 		CAD006202136E62000AC5C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD0061F2136E62000AC5C16 /* Assets.xcassets */; };
 		CAD006232136E62000AC5C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD006212136E62000AC5C16 /* LaunchScreen.storyboard */; };
 		CAD0062E2136E62000AC5C16 /* MiawoufTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0062D2136E62000AC5C16 /* MiawoufTests.swift */; };
+		CAD006402136E86200AC5C16 /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0063F2136E86200AC5C16 /* Races.swift */; };
+		CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		CAD006152136E61E00AC5C16 /* Miawouf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miawouf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD006182136E61E00AC5C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAD0061A2136E61E00AC5C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAD0061D2136E61E00AC5C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAD0061F2136E62000AC5C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD006222136E62000AC5C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		CAD006292136E62000AC5C16 /* MiawoufTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiawoufTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD0062D2136E62000AC5C16 /* MiawoufTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiawoufTests.swift; sourceTree = "<group>"; };
 		CAD0062F2136E62000AC5C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD0063F2136E86200AC5C16 /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Races.swift; path = "../../../../../../../../../Downloads/App Assets/Races.swift"; sourceTree = "<group>"; };
+		CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +79,10 @@
 		CAD006172136E61E00AC5C16 /* Miawouf */ = {
 			isa = PBXGroup;
 			children = (
+				CAD0063C2136E7C400AC5C16 /* Controller */,
+				CAD0063B2136E7B900AC5C16 /* View */,
+				CAD0063A2136E7AF00AC5C16 /* Model */,
 				CAD006182136E61E00AC5C16 /* AppDelegate.swift */,
-				CAD0061A2136E61E00AC5C16 /* ViewController.swift */,
-				CAD0061C2136E61E00AC5C16 /* Main.storyboard */,
 				CAD0061F2136E62000AC5C16 /* Assets.xcassets */,
 				CAD006212136E62000AC5C16 /* LaunchScreen.storyboard */,
 				CAD006242136E62000AC5C16 /* Info.plist */,
@@ -94,6 +97,30 @@
 				CAD0062F2136E62000AC5C16 /* Info.plist */,
 			);
 			path = MiawoufTests;
+			sourceTree = "<group>";
+		};
+		CAD0063A2136E7AF00AC5C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CAD0063F2136E86200AC5C16 /* Races.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAD0063B2136E7B900AC5C16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAD0061C2136E61E00AC5C16 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAD0063C2136E7C400AC5C16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD0061B2136E61E00AC5C16 /* ViewController.swift in Sources */,
+				CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */,
 				CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */,
+				CAD006402136E86200AC5C16 /* Races.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
