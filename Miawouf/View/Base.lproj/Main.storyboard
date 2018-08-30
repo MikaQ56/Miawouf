@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -114,14 +115,48 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.69411764705882351" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-aY-mYc">
+                                <rect key="frame" x="16" y="16" width="30" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="tintColor" red="0.6705882353" green="0.31764705879999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="dismiss" destination="g2Y-Au-eZw" eventType="touchUpInside" id="5h6-gY-r0L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4V-Qr-Lfk">
+                                <rect key="frame" x="16" y="603" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.6705882352941176" green="0.31764705882352939" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V4V-Qr-Lfk" secondAttribute="height" multiplier="343:48" id="0ZG-UL-768"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Inscrire un autre chien">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jvY-D8-LRG" kind="unwind" unwindAction="unwindToWelcomeWithSegue:" id="nfL-vI-fyY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.94117647059999998" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V4V-Qr-Lfk" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="4fv-LD-B33"/>
+                            <constraint firstItem="6YF-aY-mYc" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="C7T-Re-sne"/>
+                            <constraint firstItem="6AG-xy-8Ya" firstAttribute="trailing" secondItem="V4V-Qr-Lfk" secondAttribute="trailing" constant="16" id="WQF-iO-bYL"/>
+                            <constraint firstItem="6AG-xy-8Ya" firstAttribute="bottom" secondItem="V4V-Qr-Lfk" secondAttribute="bottom" constant="16" id="XFU-b8-zRy"/>
+                            <constraint firstItem="6YF-aY-mYc" firstAttribute="top" secondItem="ldt-kf-d9k" secondAttribute="top" constant="16" id="dhV-9r-PIA"/>
+                            <constraint firstItem="6AG-xy-8Ya" firstAttribute="trailing" secondItem="V4V-Qr-Lfk" secondAttribute="trailing" constant="16" id="dmL-pE-Edj"/>
+                            <constraint firstItem="6AG-xy-8Ya" firstAttribute="bottom" secondItem="V4V-Qr-Lfk" secondAttribute="bottom" constant="16" id="jCe-do-0A6"/>
+                            <constraint firstItem="V4V-Qr-Lfk" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="nym-b4-cdz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6AG-xy-8Ya"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2c-b7-qyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jvY-D8-LRG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-607"/>
+            <point key="canvasLocation" x="373.60000000000002" y="-607.64617691154433"/>
         </scene>
     </scenes>
     <resources>
