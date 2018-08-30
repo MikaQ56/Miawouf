@@ -17,6 +17,8 @@
 		CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006432136F3A500AC5C16 /* FormViewController.swift */; };
 		CAD006462136F5F700AC5C16 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006452136F5F700AC5C16 /* SuccessViewController.swift */; };
 		CAD006482137E54C00AC5C16 /* CatWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006472137E54C00AC5C16 /* CatWelcomeViewController.swift */; };
+		CAD0064A2137F33200AC5C16 /* CatFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006492137F33200AC5C16 /* CatFormViewController.swift */; };
+		CAD0064C2137F5E600AC5C16 /* CatSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD0064B2137F5E600AC5C16 /* CatSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CAD006432136F3A500AC5C16 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		CAD006452136F5F700AC5C16 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		CAD006472137E54C00AC5C16 /* CatWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatWelcomeViewController.swift; sourceTree = "<group>"; };
+		CAD006492137F33200AC5C16 /* CatFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFormViewController.swift; sourceTree = "<group>"; };
+		CAD0064B2137F5E600AC5C16 /* CatSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +128,12 @@
 		CAD0063C2136E7C400AC5C16 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CAD0064B2137F5E600AC5C16 /* CatSuccessViewController.swift */,
 				CAD006452136F5F700AC5C16 /* SuccessViewController.swift */,
 				CAD006412136EE9400AC5C16 /* WelcomeViewController.swift */,
 				CAD006432136F3A500AC5C16 /* FormViewController.swift */,
 				CAD006472137E54C00AC5C16 /* CatWelcomeViewController.swift */,
+				CAD006492137F33200AC5C16 /* CatFormViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,11 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */,
+				CAD0064C2137F5E600AC5C16 /* CatSuccessViewController.swift in Sources */,
 				CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */,
 				CAD006442136F3A500AC5C16 /* FormViewController.swift in Sources */,
 				CAD006462136F5F700AC5C16 /* SuccessViewController.swift in Sources */,
 				CAD006482137E54C00AC5C16 /* CatWelcomeViewController.swift in Sources */,
 				CAD006402136E86200AC5C16 /* Races.swift in Sources */,
+				CAD0064A2137F33200AC5C16 /* CatFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
