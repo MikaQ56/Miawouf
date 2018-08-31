@@ -37,7 +37,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBAction func validate() {
         createPetObject()
-        performSegue(withIdentifier: "segueToSuccess", sender: nil)
+        checkPetStatus()
     }
     
     private func createPetObject(){
@@ -49,6 +49,22 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let raceIndex = racePickerView.selectedRow(inComponent: 0)
         let race = dogRaces[raceIndex]
         dog = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+    }
+    
+    private func checkPetStatus(){
+        switch dog.status {
+        case .accepted:
+            performSegue(withIdentifier: "segueToSuccess", sender: self)
+        case .rejected(let error):
+            presentAlert(with: error)
+        }
+    }
+    
+    private func presentAlert(with error: String) {
+        let alertVC = UIAlertController(title: "Erreur", message: error, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertVC.addAction(action)
+        present(alertVC, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

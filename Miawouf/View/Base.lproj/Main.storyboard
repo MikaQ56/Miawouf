@@ -329,7 +329,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8p-c2-sgZ">
-                                <rect key="frame" x="16" y="0.0" width="382" height="736"/>
+                                <rect key="frame" x="16" y="299" width="382" height="437"/>
                                 <string key="text">Vous avez bien été ajouté.e à notre base de donnée. Nous vous enverrons un SMS dès que nous avons une âme soeur à vous proposer !</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.69411764705882351" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -342,7 +342,7 @@
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="bottom" secondItem="MpJ-qE-nA9" secondAttribute="bottom" constant="16" id="IAg-YC-OXJ"/>
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="trailing" secondItem="MpJ-qE-nA9" secondAttribute="trailing" constant="16" id="MUv-3P-ssx"/>
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="trailing" secondItem="y8p-c2-sgZ" secondAttribute="trailing" constant="16" id="PGV-FM-L26"/>
-                            <constraint firstItem="y8p-c2-sgZ" firstAttribute="top" secondItem="azZ-b4-X4U" secondAttribute="top" id="Pc2-DK-scQ"/>
+                            <constraint firstItem="y8p-c2-sgZ" firstAttribute="top" secondItem="azZ-b4-X4U" secondAttribute="top" constant="299" id="Pc2-DK-scQ"/>
                             <constraint firstItem="AsE-TB-AUu" firstAttribute="top" secondItem="azZ-b4-X4U" secondAttribute="top" constant="25" id="Th7-PC-iju"/>
                             <constraint firstItem="y8p-c2-sgZ" firstAttribute="leading" secondItem="tnq-DQ-U8Q" secondAttribute="leading" constant="16" id="ZSP-d4-o8E"/>
                             <constraint firstItem="AsE-TB-AUu" firstAttribute="leading" secondItem="tnq-DQ-U8Q" secondAttribute="leading" constant="16" id="iWS-Ki-M7A"/>
@@ -544,9 +544,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAr-NC-1N1">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAr-NC-1N1">
+                                <rect key="frame" x="16" y="393" width="382" height="281"/>
                                 <string key="text">Vous avez bien été ajouté.e à notre base de donnée. Nous vous enverrons un SMS dès que nous avons une âme soeur à vous proposer !</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.69411764705882351" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -579,22 +578,37 @@
                                     <segue destination="jvY-D8-LRG" kind="unwind" unwindAction="unwindToWelcomeWithSegue:" id="nfL-vI-fyY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wouff" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXm-Nq-OoA">
+                                <rect key="frame" x="175" y="353" width="65.333333333333314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.6705882353" green="0.31764705879999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.94117647059999998" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V4V-Qr-Lfk" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="4fv-LD-B33"/>
+                            <constraint firstItem="6AG-xy-8Ya" firstAttribute="trailing" secondItem="rAr-NC-1N1" secondAttribute="trailing" constant="16" id="BZn-1f-Men"/>
                             <constraint firstItem="6YF-aY-mYc" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="C7T-Re-sne"/>
+                            <constraint firstItem="rAr-NC-1N1" firstAttribute="leading" secondItem="6AG-xy-8Ya" secondAttribute="leading" constant="16" id="The-M5-rDg"/>
                             <constraint firstItem="6AG-xy-8Ya" firstAttribute="trailing" secondItem="V4V-Qr-Lfk" secondAttribute="trailing" constant="16" id="WQF-iO-bYL"/>
                             <constraint firstItem="6AG-xy-8Ya" firstAttribute="bottom" secondItem="V4V-Qr-Lfk" secondAttribute="bottom" constant="16" id="XFU-b8-zRy"/>
+                            <constraint firstItem="gXm-Nq-OoA" firstAttribute="centerY" secondItem="ldt-kf-d9k" secondAttribute="centerY" id="bL7-Yb-OBY"/>
+                            <constraint firstItem="rAr-NC-1N1" firstAttribute="top" secondItem="gXm-Nq-OoA" secondAttribute="bottom" constant="10" id="cmL-ol-5oB"/>
                             <constraint firstItem="6YF-aY-mYc" firstAttribute="top" secondItem="ldt-kf-d9k" secondAttribute="top" constant="25" id="dhV-9r-PIA"/>
+                            <constraint firstItem="V4V-Qr-Lfk" firstAttribute="top" secondItem="rAr-NC-1N1" secondAttribute="bottom" id="fSe-Sf-XVG"/>
+                            <constraint firstItem="gXm-Nq-OoA" firstAttribute="centerX" secondItem="ldt-kf-d9k" secondAttribute="centerX" id="xP0-jT-L6h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6AG-xy-8Ya"/>
                     </view>
+                    <connections>
+                        <outlet property="woufTextField" destination="gXm-Nq-OoA" id="y7c-bM-0nI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2c-b7-qyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jvY-D8-LRG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="374" y="-914"/>
+            <point key="canvasLocation" x="373.91304347826087" y="-914.67391304347836"/>
         </scene>
     </scenes>
     <resources>

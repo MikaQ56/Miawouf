@@ -10,6 +10,7 @@ import UIKit
 
 class CatSuccessViewController: UIViewController {
 
+    var cat: Pet!
     
     @IBAction func dismiss() {
         dismiss(animated: true, completion: nil)

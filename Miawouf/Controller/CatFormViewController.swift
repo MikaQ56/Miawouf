@@ -54,5 +54,11 @@ class CatFormViewController: UIViewController, UITextFieldDelegate, UIPickerView
         let race = catRaces[raceIndex]
         cat = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToCatSuccess" {
+            let successVC = segue.destination as! CatSuccessViewController
+            successVC.cat = cat
+        }
+    }
 }
