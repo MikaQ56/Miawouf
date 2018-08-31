@@ -8,28 +8,48 @@
 
 import UIKit
 
-class FormViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var racePickerView: UIPickerView!
+    @IBOutlet weak var majoritySwitch: UISwitch!
+    @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dogRaces.count
     }
-    */
-
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return dogRaces[row]
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func validate() {
+        createPetObject()
+    }
+    
+    private func createPetObject(){
+        let name = nameTextField.text
+        let phone = phoneTextField.text
+        let hasMajority = majoritySwitch.isOn
+        let genderIndex = genderSegmentedControl.selectedSegmentIndex
+        let gender: Pet.Gender = (genderIndex == 0) ? .male : .female
+        let raceIndex = racePickerView.selectedRow(inComponent: 0)
+        let race = dogRaces[raceIndex]
+        var pet = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+    }
+    
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        nameTextField.resignFirstResponder()
+        phoneTextField.resignFirstResponder()
+    }
 }

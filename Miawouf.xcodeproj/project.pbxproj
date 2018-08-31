@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA08654721395B3B0037F784 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA08654621395B3B0037F784 /* Model.swift */; };
 		CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD006182136E61E00AC5C16 /* AppDelegate.swift */; };
 		CAD0061E2136E61E00AC5C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD0061C2136E61E00AC5C16 /* Main.storyboard */; };
 		CAD006202136E62000AC5C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD0061F2136E62000AC5C16 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA08654621395B3B0037F784 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CAD006152136E61E00AC5C16 /* Miawouf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miawouf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD006182136E61E00AC5C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD0061D2136E61E00AC5C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD0063F2136E86200AC5C16 /* Races.swift */,
+				CA08654621395B3B0037F784 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA08654721395B3B0037F784 /* Model.swift in Sources */,
 				CAD006422136EE9400AC5C16 /* WelcomeViewController.swift in Sources */,
 				CAD0064C2137F5E600AC5C16 /* CatSuccessViewController.swift in Sources */,
 				CAD006192136E61E00AC5C16 /* AppDelegate.swift in Sources */,
