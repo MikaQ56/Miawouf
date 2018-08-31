@@ -10,6 +10,8 @@ import UIKit
 
 class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
+    var app = App()
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var racePickerView: UIPickerView!
@@ -35,6 +37,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBAction func validate() {
         createPetObject()
+
     }
     
     private func createPetObject(){
@@ -45,7 +48,8 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let gender: Pet.Gender = (genderIndex == 0) ? .male : .female
         let raceIndex = racePickerView.selectedRow(inComponent: 0)
         let race = dogRaces[raceIndex]
-        var pet = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+        let dog = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+        app.newUser(pet: dog)
     }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {

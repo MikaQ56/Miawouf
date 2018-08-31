@@ -10,6 +10,8 @@ import UIKit
 
 class CatFormViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var app = App()
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
        return 1
     }
@@ -50,7 +52,8 @@ class CatFormViewController: UIViewController, UITextFieldDelegate, UIPickerView
         let gender: Pet.Gender = (genderIndex == 0) ? .male : .female
         let raceIndex = racePickerView.selectedRow(inComponent: 0)
         let race = catRaces[raceIndex]
-        var pet = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+        let cat = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+        app.newUser(pet: cat)
     }
 
 }
