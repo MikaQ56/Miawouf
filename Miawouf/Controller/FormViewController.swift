@@ -10,7 +10,7 @@ import UIKit
 
 class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
-    var app = App()
+    var dog: Pet!
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -37,7 +37,7 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBAction func validate() {
         createPetObject()
-
+        performSegue(withIdentifier: "segueToSuccess", sender: nil)
     }
     
     private func createPetObject(){
@@ -48,8 +48,14 @@ class FormViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let gender: Pet.Gender = (genderIndex == 0) ? .male : .female
         let raceIndex = racePickerView.selectedRow(inComponent: 0)
         let race = dogRaces[raceIndex]
-        let dog = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
-        app.newUser(pet: dog)
+        dog = Pet(name: name, hasMajority: hasMajority, phone: phone, race: race, gender: gender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSuccess" {
+            let successVC = segue.destination as! SuccessViewController
+            successVC.dog = dog
+        }
     }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
