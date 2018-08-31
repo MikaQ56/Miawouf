@@ -329,10 +329,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8p-c2-sgZ">
-                                <rect key="frame" x="16" y="299" width="382" height="437"/>
+                                <rect key="frame" x="16" y="393" width="382" height="343"/>
                                 <string key="text">Vous avez bien été ajouté.e à notre base de donnée. Nous vous enverrons un SMS dès que nous avons une âme soeur à vous proposer !</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.69411764705882351" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miaou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-Hw-hzL">
+                                <rect key="frame" x="173.66666666666666" y="353" width="67" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.6705882353" green="0.31764705879999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -342,14 +348,19 @@
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="bottom" secondItem="MpJ-qE-nA9" secondAttribute="bottom" constant="16" id="IAg-YC-OXJ"/>
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="trailing" secondItem="MpJ-qE-nA9" secondAttribute="trailing" constant="16" id="MUv-3P-ssx"/>
                             <constraint firstItem="tnq-DQ-U8Q" firstAttribute="trailing" secondItem="y8p-c2-sgZ" secondAttribute="trailing" constant="16" id="PGV-FM-L26"/>
-                            <constraint firstItem="y8p-c2-sgZ" firstAttribute="top" secondItem="azZ-b4-X4U" secondAttribute="top" constant="299" id="Pc2-DK-scQ"/>
                             <constraint firstItem="AsE-TB-AUu" firstAttribute="top" secondItem="azZ-b4-X4U" secondAttribute="top" constant="25" id="Th7-PC-iju"/>
                             <constraint firstItem="y8p-c2-sgZ" firstAttribute="leading" secondItem="tnq-DQ-U8Q" secondAttribute="leading" constant="16" id="ZSP-d4-o8E"/>
+                            <constraint firstItem="Xp1-Hw-hzL" firstAttribute="centerX" secondItem="azZ-b4-X4U" secondAttribute="centerX" id="bug-tH-8cH"/>
+                            <constraint firstItem="Xp1-Hw-hzL" firstAttribute="centerY" secondItem="azZ-b4-X4U" secondAttribute="centerY" id="hbn-b9-aYu"/>
                             <constraint firstItem="AsE-TB-AUu" firstAttribute="leading" secondItem="tnq-DQ-U8Q" secondAttribute="leading" constant="16" id="iWS-Ki-M7A"/>
                             <constraint firstItem="MpJ-qE-nA9" firstAttribute="leading" secondItem="tnq-DQ-U8Q" secondAttribute="leading" constant="16" id="lyW-v2-ekT"/>
+                            <constraint firstItem="y8p-c2-sgZ" firstAttribute="top" secondItem="Xp1-Hw-hzL" secondAttribute="bottom" constant="10" id="pro-j2-wOt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tnq-DQ-U8Q"/>
                     </view>
+                    <connections>
+                        <outlet property="miaouTextField" destination="Xp1-Hw-hzL" id="nl3-va-sJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8U8-qN-YxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="G5y-gg-EeY" userLabel="Exit" sceneMemberID="exit"/>
@@ -426,6 +437,7 @@
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qer-Ib-cG9">
                                 <rect key="frame" x="16" y="364" width="382" height="251.33333333333337"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.94117647059999998" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Yzz-IG-ExN" id="iOG-Ph-q5L"/>
                                     <outlet property="delegate" destination="Yzz-IG-ExN" id="Ske-34-1P2"/>
